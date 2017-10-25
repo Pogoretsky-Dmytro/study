@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+.container{
+    width: 100%;
+    background-color: #F5F5F5;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.header{
+    background-color: #D2D2D2;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    
+   
+    
+}
+.header__logo{
+    background-image: url(/home/dmytro/Documents/Wristo/assets/images/logo.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 191px;
+    height: 63px;
+    margin-left: 27px;
+}
+.header__menu__wrap{ 
+  
+}
+.header__menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header__menu__item{
+    height: 63px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__menu__item:hover{
+    background-color: #C1C1C1;
+    font-weight: 900;
+}
+.header__menu__item__icon{
+    padding-left: 5px; 
+}
+.header__menu__item__link{
+    text-decoration: none;
+    height: auto;
+    font-size: 12px;
+    color: #242424;
+    font-weight: 400;
+    padding-left: 10px;
+    padding-right: 15px;
+    letter-spacing: 0px;
+}
+
+
+.header__profileLogo{
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
+    background-image: url(/home/dmytro/Documents/Wristo/assets/images/OldMan1.jpeg);
+    background-size: contain;
+    margin-right: 21px;
+}
