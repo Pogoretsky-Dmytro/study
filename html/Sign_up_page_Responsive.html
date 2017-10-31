@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <link rel="stylesheet" type="text/css" href="Sign_in_up_Responsive.css">
+    <link rel="stylesheet" type="text/css" href="../styles/Sign_in_up_Responsive.css">
+    <script src="../script/sign_up.js" language="javascript" type="text/javascript"></script>
     <meta charset= "utf-8">
     <title> Sign up page </title>
     </head>
@@ -9,7 +10,7 @@
     <body>
     <div class="sign_Page">
     <header>
-            <img src="logo.png" alt="logo" class="logo">
+            <a href="../html/masterPage.html"><img src="../assets/images/logo.png" alt="logo" class="logo"></a>
 
     </header>
     
@@ -18,24 +19,24 @@
         <p id="heading">Sign up</p>
         </div>
         
-        <form>
+        <form class="signUpForm" action="https://wristo-platform-backend-stg.herokuapp.com/auth/sign_up" method="post">
             <p>First name <span>*</span>
             </p>
-        <input type="text" placeholder="Nancy">
+        <input class="firstName" type="text" placeholder="Nancy">
             
             <p>Last name <span>*</span>
             </p>
-        <input type="text" placeholder="McQueen">
+        <input class="lastName" type="text" placeholder="McQueen">
             
             <p>Email <span>*</span>
             </p>
-        <input type="text" placeholder="nancy.mcqueen@mail.com">
+        <input class="email" type="text" placeholder="nancy.mcqueen@mail.com">
             
         <p>Password:</p>
-            <input type="password" placeholder="&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;">
+            <input class="password" type="password" placeholder="&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;">
             <span id="showPass">Show</span>
             
-            <input class="submit" type="submit" value="Create account">
+            <input class="submit" type="button" value="Create account" onclick="getData()">
             
         </form>
  

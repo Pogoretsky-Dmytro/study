@@ -8,11 +8,11 @@
 
 @font-face{
    font-family: DINPro-Regular;
-   src: url(DINPro-Regular_13937.ttf);
+   src: url(./fonts/DINPro-Regular_13937.ttf);
 }
 @font-face{   
     font-family: DINPro-Medium;
-    src: url(DINPro-Medium_13936.ttf);
+    src: url(./fonts/DINPro-Medium_13936.ttf);
 }
 
 html, body {
