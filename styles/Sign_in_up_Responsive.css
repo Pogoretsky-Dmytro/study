@@ -106,10 +106,7 @@ p a{
     font-family: DINPro-Regular;
 }
 
-.input__email{
-    outline: none;
-}
-.input__password{
+.firstName, .lastName, .email, .password {
     outline: none;
 }
 
