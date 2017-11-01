@@ -106,7 +106,7 @@ p a{
     font-family: DINPro-Regular;
 }
 
-.firstName, .lastName, .email, .password {
+.firstName, .lastName, .email, .password, .submit {
     outline: none;
 }
 
