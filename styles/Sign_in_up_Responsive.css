@@ -134,10 +134,20 @@ p a{
     outline: none;
 }
 
+
+.firstName::-moz-placeholder, .lastName::-moz-placeholder, .email::-moz-placeholder, .password::-moz-placeholder { /* Firefox 19+ */
+  color: black;
+}
+.firstName:-ms-input-placeholder, .lastName:-ms-input-placeholder, .email:-ms-input-placeholder, .password:-ms-input-placeholder { /* IE 10+ */
+  color: black;
+}
+.firstName:-moz-placeholder, .lastName:-moz-placeholder, .email:-moz-placeholder, .password:-moz-placeholder { /* Firefox 18- */
+  color: black;
+}
+
 .firstName::placeholder, .lastName::placeholder, .email::placeholder, .password::placeholder {
     color: black;
 }
-
 #forgotPass{
     text-align: right;
     margin-top: 8px;
