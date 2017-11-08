@@ -25,18 +25,32 @@
         <form class="signUpForm" action="https://wristo-platform-backend-stg.herokuapp.com/auth/sign_up" method="post">
             <p>First name <span>*</span>
             </p>
-        <input class="firstName" type="text" placeholder="Nancy">
+        <input class="firstName" type="text" placeholder="Nancy" maxlength="30">
             
             <p>Last name <span>*</span>
             </p>
-        <input class="lastName" type="text" placeholder="McQueen">
+        <input class="lastName" type="text" placeholder="McQueen" maxlength="30">
             
             <p>Email <span>*</span>
             </p>
-        <input class="email" type="text" placeholder="nancy.mcqueen@mail.com">
+        <input class="email" type="text" placeholder="nancy.mcqueen@mail.com" onkeyup="checkEmail()">
+            <div class="emailError" hidden="">
+                <svg fill="#b52f54" height="13" viewBox="0 0 23 23" width="13" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0V0z" fill="none"/>
+                <path d="M11 15h2v2h-2zm0-8h2v6h-2zm.99-5C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/>
+                </svg>
+                <span> Please provide a valid email address </span>
+            </div>
             
         <p>Password <span>*</span></p>
-            <input class="password" type="password" placeholder="&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;">
+            <input class="password" type="password" placeholder="&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;" onkeyup="checkPass()">
+            <div class="passError" hidden="">
+                <svg fill="#b52f54" height="13" viewBox="0 0 23 23" width="13" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0V0z" fill="none"/>
+                <path d="M11 15h2v2h-2zm0-8h2v6h-2zm.99-5C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/>
+                </svg>
+                <span> The password must be between 8 and 16 characters </span>
+            </div>
             <span id="showPass">Show</span>
             
             <input class="submit" type="button" value="Create account" onclick="getData()">

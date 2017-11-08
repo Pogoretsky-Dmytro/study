@@ -46,3 +46,43 @@ console.log(xhr);
     
 console.log(convertedDataForm);
 }
+
+
+
+
+// Email validation
+
+
+function checkEmail() {
+    var doc = document;
+    var emailError = doc.getElementsByClassName('emailError');
+    var email = doc.getElementsByClassName('email')[0].value;
+    var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    
+    if (!filter.test(email)) {
+    emailError[0].removeAttribute("hidden"); 
+    }
+    else {
+        emailError[0].setAttribute("hidden", "");
+    }   
+}
+
+function checkPass() {
+    var doc = document;
+    var passError = doc.getElementsByClassName('passError');
+    var pass = doc.getElementsByClassName('password')[0].value;
+    var filter = /^([A-Za-z\d$@$!%*?&\S]){8,16}$/;
+
+    if (!filter.test(pass)) {
+        passError[0].removeAttribute("hidden"); 
+        console.log("false");
+    }
+    else {
+        passError[0].setAttribute("hidden", "");
+        console.log("true");
+    }   
+}
+
+function showPass{
+    
+}

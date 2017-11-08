@@ -197,3 +197,12 @@ p a{
 span{
     color: #b52f54;
 }
+.emailError, .passError {
+    font-family: DINPro-Medium;
+    font-size: 14px;
+    position: absolute;
+}
+
+.signUpForm{
+    position: relative;   
+}
