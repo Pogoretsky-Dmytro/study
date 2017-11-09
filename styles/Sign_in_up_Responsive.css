@@ -154,7 +154,8 @@ p a{
     margin-bottom: 0;
 }
 
-#showPass{
+.showPass {
+    text-decoration: none;
     position: absolute;
     bottom: 75px;
     left: 349px;
@@ -163,7 +164,9 @@ p a{
     text-align: left;
     color: #b52f54;
     font-family: DINPro-Medium;
+
 }
+
 
 .submit {
     width: 100%;
@@ -197,7 +200,7 @@ p a{
 span{
     color: #b52f54;
 }
-.emailError, .passError {
+.emailError, .passError, .loginError {
     font-family: DINPro-Medium;
     font-size: 14px;
     position: absolute;
@@ -206,3 +209,4 @@ span{
 .signUpForm{
     position: relative;   
 }
+

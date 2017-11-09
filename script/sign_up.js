@@ -83,6 +83,20 @@ function checkPass() {
     }   
 }
 
-function showPass{
-    
+
+// SHOW PASSWORD
+
+function togglePassword(){
+    var d = document;
+    var input = d.getElementsByClassName("password")[0];
+    var button = d.getElementsByClassName("showPass")[0];
+    if (button.innerHTML == 'Show'){
+        input.setAttribute('type', 'text');   
+        button.innerHTML = 'Hide';
+
+    } else {
+        input.setAttribute('type', 'password');   
+        button.innerHTML = 'Show';
+    }
 }
+ 
